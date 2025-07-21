@@ -1,7 +1,7 @@
 const settings = require("../settings");
 async function aliveCommand(sock, chatId, message) {
     try {
-        const message1 = `*🤖 Arslan-Ai is Active!*\n\n` +
+        const message1 = `*🤖 LYRICAL-XMF is Active!*\n\n` +
                        `*Version:* ${settings.version}\n` +
                        `*Status:* Online\n` +
                        `*Mode:* Public\n\n` +
@@ -19,7 +19,7 @@ async function aliveCommand(sock, chatId, message) {
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363348739987203@newsletter',
-                    newsletterName: 'Arslan-Ai',
+                    newsletterName: 'LYRICAL-XMD',
                     serverMessageId: -1
                 }
             }
