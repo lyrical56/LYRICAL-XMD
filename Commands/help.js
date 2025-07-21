@@ -4,19 +4,19 @@ const path = require('path');
 
 async function helpCommand(sock, chatId, message) {
     const helpMessage = `
-╭━━━〔 🤖 *ARSLAN-AI* 〕━━━╮
-┃ 💠 *Bot Name:* ${settings.botName || 'Arslan-Ai'}
+╭━━━〔 🤖 *LYRICAL-XMD* 〕━━━╮
+┃ 💠 *Bot Name:* ${settings.botName || 'LYRICAL-XMD'}
 ┃ 🔖 *Version:* ${settings.version || '2.0.5'}
-┃ 👑 *Owner:* ${settings.botOwner || 'ArslanMD Official'}
+┃ 👑 *Owner:* ${settings.botOwner || 'LYRICAL Official'}
 ┃ 📺 *YouTube:* ${global.ytch || 'Not set'}
 ╰━━━━━━━━━━━━━━╯
 
-🔥 _"Arslan-Ai is not just a bot, it's an experience."_  
-✨ _Designed with 💙 by ArslanMD_
+🔥 _"LYRICAL-XMD is not just a bot, it's an experience."_  
+✨ _Designed with 💙 by lyrical travor_
 🔍 _Use the commands below to explore the magic🪄._
 
 ━━━━━━━━━━━━━━━
-> 📌*COMMAND MENU*
+> 📌*CMD MENU*
 ━━━━━━━━━━━━━━━
 
 ╭─🌐 *GENERAL ZONE*
@@ -24,21 +24,15 @@ async function helpCommand(sock, chatId, message) {
 │ 📡 .ping  
 │ ⚡ .alive  
 │ 🗣️ .tts  
-│ 👑 .owner  
-│ 😂 .joke  
-│ 📜 .quote  
+│ 👑 .owner   
 │ 📚 .fact  
 │ 🌤️ .weather  
 │ 📰 .news  
 │ 🖍️ .attp  
 │ 🎶 .lyrics  
-│ 🎱 .8ball  
-│ 👥 .groupinfo  
-│ 🛡️ .staff  
+│ 👥 .groupinfo 
 │ 📎 .vv  
-│ 🌍 .trt  
 │ 🖼️ .ss  
-│ 🆔 .jid  
 ╰──────────────
 
 ╭─🛡️ *GROUP GUARD*
@@ -53,11 +47,9 @@ async function helpCommand(sock, chatId, message) {
 │ ⚡ .warn  
 │ 🛑 .antilink  
 │ 🤬 .antibadword  
-│ 🧹 .clear  
 │ 📢 .tag  
 │ 📣 .tagall  
-│ 🤖 .chatbot  
-│ 🔁 .resetlink  
+│ 🤖 .chatbot 
 │ 👋 .welcome  
 │ 🥀 .goodbye  
 ╰──────────────
@@ -74,23 +66,10 @@ async function helpCommand(sock, chatId, message) {
 
 ╭─🎨 *STICKER TOOLS*
 │ 🌀 .blur  
-│ 🖼️ .simage  
-│ 🪄 .sticker  
-│ 🔗 .tgsticker  
 │ 😂 .meme  
 │ 🏷️ .take  
 │ 😎 .emojimix  
-╰──────────────
-
-╭─🎮 *GAME ROOM*
-│ ❌⭕ .tictactoe  
-│ 💀 .hangman  
-│ 🔤 .guess  
-│ ❓ .trivia  
-│ ✅ .answer  
-│ 🔍 .truth  
-│ 🔥 .dare  
-╰──────────────
+╰─────────
 
 ╭─🧠 *AI POWER*
 │ 🤖 .gpt  
@@ -100,17 +79,11 @@ async function helpCommand(sock, chatId, message) {
 ╰──────────────
 
 ╭─🎉 *FUN ZONE*
-│ 💘 .compliment  
-│ 🤬 .insult  
+│ 💘 .compliment
 │ 😎 .flirt  
-│ 🎭 .shayari  
 │ 🌙 .goodnight  
-│ 🌹 .roseday  
 │ 🎭 .character  
-│ ☠️ .wasted  
-│ 🚢 .ship  
-│ 🤤 .simp  
-│ 🤡 .stupid  
+│ 
 ╰──────────────
 
 ╭─✍️ *TEXT MAKER*
@@ -155,7 +128,7 @@ async function helpCommand(sock, chatId, message) {
 📢 *Join our channel*`;
 
     try {
-        const imagePath = path.join(__dirname, '../assets/bot_image.jpg');
+        const imagePath = path.join(__dirname, '../assets/https://files.catbox.moe/1zqblx.jpg');
         if (fs.existsSync(imagePath)) {
             await sock.sendMessage(chatId, {
                 image: fs.readFileSync(imagePath),
@@ -178,7 +151,7 @@ async function helpCommand(sock, chatId, message) {
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363348739987203@newsletter',
-                        newsletterName: 'Arslan-Ai by ArslanMD Official',
+                        newsletterName: 'LYRICAL-XMD by lyricalOfficial',
                         serverMessageId: -1
                     }
                 }
