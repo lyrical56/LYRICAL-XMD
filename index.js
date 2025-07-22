@@ -24,7 +24,7 @@ const {
   //===================SESSION-AUTH============================
   if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
   if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
-  const sessdata = config.SESSION_ID.split("ARSL~")[1];
+  const sessdata = config.SESSION_ID.split("LYRICAL")[1];
   const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
   filer.download((err, data) => {
   if(err) throw err
@@ -70,7 +70,7 @@ const {
   console.log('your name connected to whatsapp ✅')
   
   let up =`╔═════════════════╗
-  ║      your name           
+  ║      LYRICALXMD          
   ║  SUCCESSFULLY CONNECTED ✅ 😍        
   ╠═════════════════╣
   ║      • PREFIX: .            
@@ -81,8 +81,8 @@ const {
   ║ ♻ 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐋𝐈𝐍𝐊          
   ║ https://wa.me/message/VRZ5QLDAHXKSF1                 
   ╠═════════════════╣
-  ║      your name               
-  ║ > © ᴘᴏᴡᴇʀᴇᴅ ʙʏ your name       
+  ║      LYRICAL XMD              
+  ║ > © lyrical travoryour name       
   ╚═════════════════╝
 `;
   conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://files.catbox.moe/atby2t.png` }, caption: up })
@@ -219,7 +219,7 @@ if (!isReact && senderNumber === botNumber) {
   })
   }
   app.get("/", (req, res) => {
-  res.send("hey, Arslan-Ultra-MD started✅");
+  res.send("hey, lyrical xmdstarted✅");
   });
   app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
   setTimeout(() => {
